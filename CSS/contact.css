@@ -1,0 +1,95 @@
+html{scroll-behavior: smooth;}
+:root{
+    --white-light: rgba( 255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+*{padding:0;margin:0;box-sizing: border-box;}
+/* body section */
+body{font-family: 'Quickksand', sans-serif;}
+
+/* header section */
+header{width: 100%;background-color: var(--carribean-green);position: fixed;z-index: 999;}
+nav{width: 90%;height: 80px;margin: 0 5%;}
+label.logo img{width: 200px;cursor: pointer;padding: 15px;}
+nav ul{float: right;margin-right: 20px;}
+nav ul li{display: inline-block;line-height: 80px; margin: 0 5px;}
+nav ul li a{color: #fff;text-transform: uppercase;text-decoration: none;font-weight: bold;padding: 0 15px;}
+.checkbtn{font-size: 30px;color: #fff;float: right;line-height: 80px;margin-right: 40px;display: none;}
+#check{display: none;}
+
+/* contact */
+.contact-area{width: 100%;}
+.contact-content{width: 90%;display: flex;margin: 0 5%;}
+.contact-content .text{font-size: 1.5rem;font-weight: bold;padding: 20px 0 ;}
+.contact-content p{font-size: 1rem;padding-right: 40px;padding-bottom: 30px}
+.left-col{width: 50%;padding-left: 10%}
+.right-col{width: 50%;padding-right: 10%;}
+.icons .row{width: 100%;justify-content: left;padding: 10px 0;cursor: pointer;}
+.icons .row .head{padding: 5px 0;}
+.icons .row a{text-decoration: none;color: rgb(68, 68, 68);}
+.icons .row i{padding: 25px;color: #40c9a2}
+.right-col .fields{width: 100%;}
+.fields .row{width: 100%;}
+.row .col{width: 50%;}
+.fields .fname input{padding: 10px;border-radius: 5px;width: 95%;float: left;border-color: #40c9a2;} 
+.fields .lname input{padding: 10px;border-radius: 5px;width: 95%;float: right;border-color: #40c9a2;}
+.fields .email input{width: 100%;padding: 10px;margin: 10px 0;border-radius: 5px;border-color: #40c9a2;}
+.fields .comment textarea{width: 100%;border-radius: 5px;padding: 10px;border-color: #40c9a2;resize: none;}
+.fields button{margin-top: 15px;width:30%;height: 40px;background-image: linear-gradient(90deg, #40c9a2 -30%, #c3b7ff 100%);background-clip: padding-box;color:whitesmoke;transition: .9s ease;box-shadow:0px 10px 30px rgba(57,56,61,0.205);border:none;border-radius: 5px;}
+.fields button:hover{background: whitesmoke;background-clip: padding-box;color: #40c9a2;border:1px solid #40c9a2;}
+
+/* maplocation */
+.maplocation{width: 100%;margin-top: 20px;}
+.title{font-size: 2.2rem;text-align: center;padding: 40px 0;text-transform: uppercase;}
+
+/* footer  */
+.footer{background: black;color: #8a8a8a;font-size: 14px;padding: 60px 0 20px;}
+.footer-container{max-width: 1300px;margin: auto;padding-left: 25px;padding-right: 25px;}
+.row{display: flex;align-items: center;flex-wrap: wrap;justify-content: center;}
+.footer p{color: #8a8a8a;}
+.footer h3{color: #fff;margin-bottom: 20px;}
+.footer-col-1, .footer-col-2, .footer-col-3{min-width: 250px;margin-bottom: 20px;}
+.footer-col-1{flex-basis: 25%;text-align: center;}
+.footer-col-2{flex: 1;text-align: center;}
+.footer-col-2 img{width: 180px;margin-bottom: 20px;cursor: pointer;}
+.footer-col-2 p{font-size: .7rem;padding: 0 10px;}
+.footer-col-3{flex-basis: 12%;text-align: center;}
+.footer ul{list-style-type: none;}
+.app-logo{margin-top: 20px;cursor: pointer;}
+.app-logo img{width: 140px;}
+.footer hr{border: none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+.footer ul a{text-decoration: none;color: #fff;transition: .3s ease;}
+.footer ul a:hover{color: #8a8a8a;}
+.footer ul i{display: block;width: 10%;padding: 5px 60px ;cursor: pointer;align-items: center;font-size: 13px;font-weight: bold;font-size: .9rem;}
+.footer ul i span{padding-left: 35px;}
+.copyright{text-align: center;}
+
+/* backto top*/
+.gotop{position:fixed;width:50px;height: 50px;background: #40c9a2;bottom: 30px;right:40px;text-decoration: none;text-align: center;line-height: 50px;color: white;font-size: 22px;border-radius: 10px;transition: .9s ease;}
+.gotop:hover{background-color: white;color: #40c9a2;box-shadow:10px 20px 20px rgba(0, 0, 0, 0.205);border: 1px solid #0b2e4e;}
+
+/* media Query for menu */
+@media only screen and ( max-width : 992px) {
+    label.logo img{width: 200px;cursor: pointer;}
+    .checkbtn{display: block;}
+    nav ul{position: fixed;width: 100%;height: 100vh;background: #115a45;top: 80px;left: -100%;text-align: center;transition: all.5s;}
+    nav ul li{display: block;margin: 50px 0;line-height: 30px;}
+    nav ul li a{font-size: 20px;}
+    a:hover{background: none;color: #40c9a2;}
+    #check:checked ~ ul{left: 0;}
+    .contact-content{width: 100%;display: block;margin: 0;}
+    .contact-content p{font-size: .9rem;padding: 0 0 10px }
+    .left-col{width: 80%;margin-bottom: 10%;}
+    .icons .row i{padding: 10px;color: #40c9a2}
+    .right-col{width: 80%;margin: 0 10%;padding: 0;}
+    .fields button{margin-top: 15px;width:100%;height: 40px;background-image: linear-gradient(90deg, #40c9a2 -30%, #c3b7ff 100%);background-clip: padding-box;color:whitesmoke;transition: .9s ease;box-shadow:0px 10px 30px rgba(57,56,61,0.205);border:none;border-radius: 5px;}
+    .fields button:hover{background: whitesmoke;background-clip: padding-box;color: #40c9a2;border:1px solid #40c9a2;}
+    .sub-title{font-size: .8rem;} 
+}
+
+@media only screen and ( max-width : 600px){
+    nav{width: 100%;height: 70px;padding: 0 10px;}
+    label.logo img{width: 150px;cursor: pointer;padding: 20px 0 0;}
+}
