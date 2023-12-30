@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>𝐅𝐚𝐬𝐡𝐢𝐨𝐧 𝐅𝐥𝐚𝐬𝐡/account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../Images/mainico.ico" type="image/ico" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/account.css">
+    <script src="https://kit.fontawesome.com/fcb9a44c55.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+   <!--header-->
+	<header>
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fa fa-bars"></i>
+			</label>
+			<label class="logo"><a href="#"><img src="./Images/main.logo.png"></a></label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Log in</a></li>
+				<li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <!--Account contaner-->
+    <div class="account-container">
+        <div class="inner-container">
+            <div class="account-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">𝐋𝐨𝐠 𝐈𝐧</button>
+                    <button type="button" class="toggle-btn" onclick="register()">𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫</button>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/login/"><img src="./Images/Facebook.jpg" alt="Facebook"></a>
+                    <a href="https://twitter.com/login?lang=en-gb"><img src="./Images/Twitter.jpg" alt="Twitter"></a>
+                    <a href="https://accounts.google.com/servicelogin"><img src="./Images/Google.jpg" alt="Google"></a>
+                </div>
+                <form action="#" class="input-group" id="login">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">𝐋𝐨𝐠 𝐈𝐧</button>
+                </form>
+                <form action="#" class="input-group" id="register">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" id="password" class="input-field" placeholder="Enter Password" required>
+                    <p id="message">Password is  <b id="strenght"></b></p>
+                    <input type="checkbox" class="check-box" required><span>I agree terms & conditions</span>
+                    <button type="submit" class="submit-btn">𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+
+        var pass = document.getElementById("password")
+        var msg = document.getElementById("message")
+        var str = document.getElementById("strenght")
+
+        pass.addEventListener('input',() => {
+            if(pass.value.length > 0){
+                msg.style.display = "block";
+            }
+            else{
+                msg.style.display = "none";
+            }
+            if(pass.value.length < 5){
+                str.innerHTML = "Weak";
+                pass.style.borderColor = "#ff5925";
+                msg.style.color = "#ff5925";
+            }
+            else if(pass.value.length >= 5 && pass.value.length < 8){
+                str.innerHTML = "Good"; 
+                pass.style.borderColor = "yellow";
+                msg.style.color = "yellow";
+            }
+            else if(pass.value.length >= 8){
+                str.innerHTML = "Strong";
+                pass.style.borderColor = "#26d730";
+                msg.style.color = "#26d730";
+            }
+        })
+    </script>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./Images/playstore.png" alt="playstore">
+                        <img src="./Images/appstore.png" alt="appstore">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./Images/main.logo.png" alt="logo">
+                    <p>BRING YOUR EXPECTATIONS OF DRESSING INTO REALITY.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/suraj.nate.75"><i class="fa fa-facebook"><span>Facebook</span></i></a>
+                        <a href="https://twitter.com/SurajNate?t=tfJU-JfLbBky98d_vUriAA&s=08"><i class="fa fa-twitter"><span>Twitter</span></i></a>
+                        <a href="https://www.instagram.com/suraj_nate/"><i class="fa fa-instagram"><span>Instagram</span></i></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - All Rights Reserved </p>
+        </div>
+    </div>
+
+     <!------============= backtotop section =============------>
+	<section class="backtotop">
+		<a class="gotop" href="#"><i class="fa fa-arrow-up"></i></a>
+	</section>
+
+</body>
+
+</html>

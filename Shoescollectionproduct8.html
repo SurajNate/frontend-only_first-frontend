@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shoescollectionproduct8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./Images/mainico.ico" type="image/ico" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Shoescollectionproduct.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fcb9a44c55.js" crossorigin="anonymous"></script>
+    <script>
+        function clickme(smallImg) {
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</head>
+
+
+<body>
+    <!--header-->
+	<header>
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fa fa-bars"></i>
+			</label>
+			<label class="logo"><a href="#"><img src="./Images/main.logo.png"></a></label>
+			<ul>
+				<li><a href="main.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="account.html">Log in</a></li>
+				<li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <div class="productdeatail">
+        <div class="left">
+            <div class="preview">
+                <img src="./Images/deatailed8.1.jpeg" id="imagebox">
+            </div>
+
+            <div class="sliderproduct">
+                <img src="./Images/deatailed8.1.jpeg" alt="" onclick="clickme(this)">
+                <img src="./Images/deatailed8.2.jpeg" alt="" onclick="clickme(this)">
+                <img src="./Images/deatailed8.3.jpeg" alt="" onclick="clickme(this)">
+                <img src="./Images/deatailed8.4.jpeg" alt="" onclick="clickme(this)">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="containt">
+                <p class="brand">Brand : HIDA </p>
+                <h2>TRAINING & GYM SHOES FOR MEN (BLACK, GREY)</h2>
+                <div class="rating">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star-o"></i></span>
+                </div>
+                <p class="price"><del>₹ 999.00</del> <br> ₹ 399.00</p>
+                <h3>60% off</h3>
+                <p>Size : <select namm="size">
+                        <option value="select size">select size</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select></p>
+                <p>Quantity : <input type="text" value="1"></p>
+
+                <button type="button" class="cart"><span><i class="fa fa-plus"></i></span> Add to Cart </button>
+                <button type="button" class="buy"> <span><i class="fa fa-shopping-cart"></i></span>buy now </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-items">
+        <h2>related items</h2>
+    </div>
+
+    <div class="product-items">
+        <!--products-->
+       <!--- single product -->
+       <div class="product">
+        <div class="product-content">
+            <div class="product-img">
+                <a href="Shoescollectionproduct1.html"><img src="./Images/deatailed1.1.jpeg"
+                        alt="product image"></a>
+            </div>
+            <div class="product-btns">
+                <button type="button" class="btn-cart">Add to Cart <span><i
+                            class="fa fa-plus"></i></span></button>
+                <button type="button" class="btn-buy">buy now <span><i
+                            class="fa fa-shopping-cart"></i></span></button>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-info-top">
+                <h2 class="sm-title">Strollin</h2>
+                <div class="rating">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star-o"></i></span>
+                </div>
+            </div>
+            <a href="Shoescollectionproduct1.html" class="product-name">Sneakers For Men (Multicolor)</a>
+            <p class="product-price"><del>₹ 999.00</del></p>
+            <p class="product-price">₹ 399.00</p>
+        </div>
+        <div class="off-info">
+            <h2 class="sm-title">60% off</h2>
+        </div>
+    </div>
+    <!-- end of single product -->
+    <!--- single product -->
+    <div class="product">
+        <div class="product-content">
+            <div class="product-img">
+                <a href="Shoescollectionproduct2.html"><img src="./Images/deatailed2.1.jpeg"
+                        alt="product image"></a>
+            </div>
+            <div class="product-btns">
+                <button type="button" class="btn-cart">Add to Cart <span><i
+                            class="fa fa-plus"></i></span></button>
+                <button type="button" class="btn-buy">buy now <span><i
+                            class="fa fa-shopping-cart"></i></span></button>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-info-top">
+                <h2 class="sm-title">Layasa</h2>
+                <div class="rating">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star-half-alt"></i></span>
+                    <span><i class="fa fa-star-o"></i></span>
+                </div>
+            </div>
+            <a href="Shoescollectionproduct2.html" class="product-name">Casual Partywear Outdoors Shoes</a>
+            <p class="product-price"><del>₹ 999.00</del></p>
+            <p class="product-price">₹ 398.00</p>
+        </div>
+        <div class="off-info">
+            <h2 class="sm-title">60% off</h2>
+        </div>
+    </div>
+    <!-- end of single product -->
+    <!--- single product -->
+    <div class="product">
+        <div class="product-content">
+            <div class="product-img">
+                <a href="Shoescollectionproduct3.html"><img src="./Images/deatailed3.1.jpeg"
+                        alt="product image"></a>
+            </div>
+            <div class="product-btns">
+                <button type="button" class="btn-cart">Add to Cart <span><i
+                            class="fa fa-plus"></i></span></button>
+                <button type="button" class="btn-buy">buy now <span><i
+                            class="fa fa-shopping-cart"></i></span></button>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-info-top">
+                <h2 class="sm-title">Arivo</h2>
+                <div class="rating">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star-o"></i></span>
+                </div>
+            </div>
+            <a href="Shoescollectionproduct3.html" class="product-name">Walking Shoes For Men
+                (Multicolor)</a>
+            <p class="product-price"><del>₹ 1999.00</del></p>
+            <p class="product-price">₹ 699.00</p>
+        </div>
+        <div class="off-info">
+            <h2 class="sm-title">65% off</h2>
+        </div>
+    </div>
+    <!-- end of single product -->
+    <!--- single product -->
+    <div class="product">
+        <div class="product-content">
+            <div class="product-img">
+                <a href="Shoescollectionproduct4.html"><img src="./Images/deatailed4.1.jpeg"
+                        alt="product image"></a>
+            </div>
+            <div class="product-btns">
+                <button type="button" class="btn-cart">Add to Cart <span><i
+                            class="fa fa-plus"></i></span></button>
+                <button type="button" class="btn-buy">buy now <span><i
+                            class="fa fa-shopping-cart"></i></span></button>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-info-top">
+                <h2 class="sm-title">Ardeo</h2>
+                <div class="rating">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star-o"></i></span>
+                </div>
+            </div>
+            <a href="Shoescollectionproduct4.html" class="product-name">RAMBOW FUNKY SHOE FOR GYM </a>
+            <p class="product-price"><del>₹ 1599.00</del></p>
+            <p class="product-price">₹ 489.00</p>
+        </div>
+        <div class="off-info">
+            <h2 class="sm-title">69% off</h2>
+        </div>
+    </div>
+    <!-- end of single product -->
+    </div>
+
+
+   
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-container">
+        <div class="footerrow">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="./Images/playstore.png" alt="playstore">
+                    <img src="./Images/appstore.png" alt="appstore">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./Images/main.logo.png" alt="logo">
+                <p>BRING YOUR EXPECTATIONS OF DRESSING INTO REALITY.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/suraj.nate.75"><i
+                            class="fa fa-facebook"><span>Facebook</span></i></a>
+                    <a href="https://twitter.com/SurajNate?t=tfJU-JfLbBky98d_vUriAA&s=08"><i
+                            class="fa fa-twitter"><span>Twitter</span></i></a>
+                    <a href="https://instagram.com/surajnate___?utm_medium=copy_link"><i
+                            class="fa fa-instagram"><span>Instagram</span></i></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - All Rights Reserved </p>
+    </div>
+</div>
+
+<!------============= backtotop section =============------>
+<section class="backtotop">
+    <a class="gotop" href="#"><i class="fa fa-arrow-up"></i></a>
+</section>
+
+</body>
+</html>
