@@ -4,3 +4,5 @@ My First Frontend Designed website when i was pursuing my web page designing cou
 🌐 Website : https://surajnate.github.io/frontend-only_first-frontend/
 
 ▶️ YouTube: https://youtu.be/zDPTxwIUxSE
+
+You can also check it out the LinkedIn profile ☺️
