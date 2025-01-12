@@ -5,4 +5,4 @@ My First Frontend Designed website when i was pursuing my web page designing cou
 
 ▶️ YouTube: https://youtu.be/zDPTxwIUxSE
 
-You can also check it out the LinkedIn profile ☺️
+You can also check out the LinkedIn profile ☺️ 
